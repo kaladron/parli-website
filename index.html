@@ -172,6 +172,7 @@
           },
         }
     </script>
+<script defer="" src="./site-components.js"></script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -182,43 +183,7 @@
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface-bright shadow-sm docked full-width top-0 z-50 sticky">
-<div class="max-w-[1200px] mx-auto px-gutter-mobile md:px-margin-desktop w-full flex justify-between items-center h-20">
-<!-- Brand -->
-<a class="flex items-center gap-3 active:scale-95 transition-transform duration-200" href="#">
-<img alt="Parli People PTA Logo" class="h-12 w-auto object-contain rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida/ADBb0uhxZLIeGss6QHe0NgWI2wQ267H_hlkVrKnN9j51YvqMeZ89w8620Zq3Ltr4m-dWa2dEDPuaJ16cia70PhhPP-vlanB-S2vzRRwA11TBs2-azACzgxAATPF3O5m63cVJXd-fCY1j88D_P4IboGAtTUfZRsK1TP0z9E0pXkVB1OXbeLk7hQhuwsy7X15wj4YSsKxxFhT8oY36VDLkqKKwbuT8e8dRhWsUKMwcA2x_TZ_QoN-8ZTzjUkMncH64"/>
-<span class="text-headline-md font-headline-md font-bold text-primary">Parli People</span>
-</a>
-<!-- Navigation Links (Desktop) -->
-<ul class="hidden md:flex gap-8 items-center">
-<li>
-<a class="text-primary border-b-2 border-secondary-container pb-1 font-bold text-headline-md font-headline-md block active:scale-95 transition-transform duration-200" href="#">Home</a>
-</li>
-<li>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Support Us</a>
-</li>
-<li>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Get Involved</a>
-</li>
-<li>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Year Groups</a>
-</li>
-</ul>
-<!-- Actions (Desktop) -->
-<div class="hidden md:flex items-center gap-4">
-<a class="text-label-md font-label-md font-bold text-primary hover:text-tertiary-container transition-colors active:scale-95 transition-transform duration-200" href="#">Donate Now</a>
-<a class="bg-deep-indigo text-on-primary text-label-md font-label-md px-6 py-2 rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95 flex items-center gap-2" href="#">
-                    Join the Committee
-                    <span class="material-symbols-outlined" data-icon="arrow_forward" style="font-size: 18px;">arrow_forward</span>
-</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary p-2 active:scale-95 transition-transform duration-200">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</nav>
+<parli-site-header current-page="home"></parli-site-header>
 <!-- Main Content Canvas -->
 <main class="flex-grow">
 <!-- Hero Section -->
@@ -339,26 +304,5 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-inverse-surface full-width mt-auto">
-<div class="max-w-[1200px] mx-auto px-gutter-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-8">
-<div class="flex flex-col gap-4 max-w-sm">
-<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">Parli People</span>
-<p class="text-body-md font-body-md text-on-surface dark:text-inverse-on-surface">Active Community Engagement for Our School.</p>
-<p class="text-label-md font-label-md text-on-surface dark:text-inverse-on-surface opacity-80 mt-4">
-                    © 2024 Parli People PTA. All rights reserved. Registered Charity.
-                </p>
-</div>
-<div class="flex flex-col md:flex-row gap-8 md:gap-16 w-full md:w-auto">
-<ul class="flex flex-col gap-3">
-<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Contact: info@parli-people.org</a></li>
-<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a></li>
-</ul>
-<ul class="flex flex-col gap-3">
-<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Term of Use</a></li>
-<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Volunteer Handbook</a></li>
-</ul>
-</div>
-</div>
-</footer>
+<parli-site-footer></parli-site-footer>
 </body></html>

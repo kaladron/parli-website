@@ -177,6 +177,7 @@
           },
         }
       </script>
+<script defer="" src="./site-components.js"></script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -184,32 +185,7 @@
       </style>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
-<!-- TopNavBar Component -->
-<header class="bg-surface-bright dark:bg-surface-dim docked full-width top-0 shadow-sm dark:shadow-none z-50 sticky top-0">
-<div class="max-w-[1200px] mx-auto px-margin-desktop w-full flex justify-between items-center h-20">
-<!-- Brand Logo -->
-<div class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary">
-                Parli People
-            </div>
-<!-- Navigation Links (Web) -->
-<nav class="hidden md:flex gap-8 items-center h-full">
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 active:scale-95 transition-transform duration-200 h-full flex items-center px-4" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 active:scale-95 transition-transform duration-200 h-full flex items-center px-4" href="#">Support Us</a>
-<!-- Active State -->
-<a class="text-primary dark:text-inverse-primary border-b-2 border-secondary-container dark:border-secondary-fixed-dim pb-1 font-bold hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 active:scale-95 transition-transform duration-200 h-full flex items-center px-4 mt-1" href="#">Get Involved</a>
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 active:scale-95 transition-transform duration-200 h-full flex items-center px-4" href="#">Year Groups</a>
-</nav>
-<!-- Actions -->
-<div class="flex items-center gap-4">
-<button class="hidden lg:block px-6 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-label-md text-label-md hover:shadow-md transition-all active:scale-95">
-                    Donate Now
-                </button>
-<button class="px-6 py-2 bg-deep-indigo text-on-primary rounded-lg font-label-md text-label-md hover:shadow-md transition-all active:scale-95">
-                    Join the Committee
-                </button>
-</div>
-</div>
-</header>
+<parli-site-header current-page="get-involved"></parli-site-header>
 <!-- Main Content Canvas -->
 <main class="flex-grow flex flex-col gap-y-[80px] pb-[80px]">
 <!-- Hero Section (Bento Inspired Split) -->
@@ -408,27 +384,5 @@
 </div>
 </section>
 </main>
-<!-- Footer Component -->
-<footer class="bg-surface-container dark:bg-inverse-surface full-width flat no shadows">
-<div class="max-w-[1200px] mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-8">
-<div class="flex flex-col gap-4">
-<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">
-                    Parli People
-                </div>
-<p class="text-on-surface dark:text-inverse-on-surface text-body-md font-body-md max-w-sm">
-                    © 2024 Parli People PTA. All rights reserved. Registered Charity.
-                </p>
-</div>
-<div class="flex flex-col md:flex-row gap-6 md:gap-12 text-label-md font-label-md">
-<div class="flex flex-col gap-3">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Contact: info@parli-people.org</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
-</div>
-<div class="flex flex-col gap-3">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Term of Use</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Volunteer Handbook</a>
-</div>
-</div>
-</div>
-</footer>
+<parli-site-footer></parli-site-footer>
 </body></html>

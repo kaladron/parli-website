@@ -127,31 +127,10 @@
             }
         }
     </script>
+<script defer="" src="./site-components.js"></script>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
-<!-- TopNavBar (Shared Component) -->
-<header class="bg-surface-bright shadow-sm sticky top-0 z-50 w-full docked full-width top-0 text-primary">
-<div class="max-w-[1200px] mx-auto px-margin-desktop w-full flex justify-between items-center h-20">
-<!-- Brand -->
-<a class="text-headline-md font-headline-md font-bold text-primary" href="#">Parli People</a>
-<!-- Navigation Links -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200 px-3 py-2 rounded-lg text-body-md font-body-md" href="#">Home</a>
-<a class="text-primary border-b-2 border-secondary-container pb-1 font-bold px-3 py-2 text-body-md font-body-md active:scale-95 transition-transform duration-200" href="#">Support Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200 px-3 py-2 rounded-lg text-body-md font-body-md" href="#">Get Involved</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all duration-200 px-3 py-2 rounded-lg text-body-md font-body-md" href="#">Year Groups</a>
-</nav>
-<!-- Actions -->
-<div class="hidden md:flex items-center gap-4">
-<button class="text-primary font-label-md text-label-md hover:bg-surface-container-low transition-all duration-200 px-4 py-2 rounded-lg">Join the Committee</button>
-<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-lg hover:bg-tertiary transition-colors shadow-sm">Donate Now</button>
-</div>
-<!-- Mobile Menu Toggle (Decorative for this scope) -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</header>
+<parli-site-header current-page="support"></parli-site-header>
 <!-- Main Content Canvas -->
 <main class="flex-grow w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-24">
 <!-- Hero Section: Impact -->
@@ -283,21 +262,5 @@
 </div>
 </section>
 </main>
-<!-- Footer (Shared Component) -->
-<footer class="bg-surface-container dark:bg-inverse-surface mt-auto full-width flat no shadows">
-<div class="max-w-[1200px] mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-8">
-<div class="space-y-4">
-<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">Parli People</div>
-<p class="text-body-md font-body-md text-on-surface dark:text-inverse-on-surface">
-                    © 2024 Parli People PTA. All rights reserved. Registered Charity.
-                </p>
-</div>
-<div class="flex flex-col gap-3">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer text-label-md font-label-md" href="#">Contact: info@parli-people.org</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer text-label-md font-label-md" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer text-label-md font-label-md" href="#">Term of Use</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer text-label-md font-label-md" href="#">Volunteer Handbook</a>
-</div>
-</div>
-</footer>
+<parli-site-footer></parli-site-footer>
 </body></html>
