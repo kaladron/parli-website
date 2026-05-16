@@ -272,7 +272,7 @@ class ParliSiteHeader extends HTMLElement {
         <div class="container">
           <div class="bar">
             <a class="brand" href="./index.html" aria-label="Parli People home">
-              <img class="brand-logo" src="${BRAND_LOGO}" alt="Parli People PTA logo">
+              <img class="brand-logo" src="${BRAND_LOGO}" alt="Parli People PTA logo" loading="eager" fetchpriority="high" decoding="async">
               <span>Parli People</span>
             </a>
             <nav class="desktop-nav" aria-label="Primary">
