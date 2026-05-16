@@ -46,6 +46,8 @@ class ParliSiteHeader extends HTMLElement {
       <style>
         :host {
           display: block;
+          contain: layout;
+          view-transition-name: site-header;
         }
 
         * {
@@ -321,6 +323,8 @@ class ParliSiteFooter extends HTMLElement {
       <style>
         :host {
           display: block;
+          contain: layout;
+          view-transition-name: site-footer;
         }
 
         * {

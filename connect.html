@@ -105,8 +105,31 @@
             }
         }
     </script>
-<script defer="" src="./site-components.js"></script>
+<script src="./site-components.js"></script>
 <style>
+        @view-transition {
+            navigation: auto;
+        }
+        ::view-transition-old(root),
+        ::view-transition-new(root) {
+            animation-duration: 180ms;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0ms;
+            }
+        }
+        parli-site-header,
+        parli-site-footer {
+            display: block;
+        }
+        parli-site-header {
+            min-height: 80px;
+        }
+        parli-site-footer {
+            min-height: 220px;
+        }
         body { font-family: 'Work Sans', sans-serif; }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;

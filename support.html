@@ -127,7 +127,32 @@
             }
         }
     </script>
-<script defer="" src="./site-components.js"></script>
+<script src="./site-components.js"></script>
+<style>
+        @view-transition {
+            navigation: auto;
+        }
+        ::view-transition-old(root),
+        ::view-transition-new(root) {
+            animation-duration: 180ms;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0ms;
+            }
+        }
+        parli-site-header,
+        parli-site-footer {
+            display: block;
+        }
+        parli-site-header {
+            min-height: 80px;
+        }
+        parli-site-footer {
+            min-height: 220px;
+        }
+    </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
 <parli-site-header current-page="support"></parli-site-header>
