@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parli People - Year Groups</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "success-green": "#10B981",
+                        "inverse-on-surface": "#f5f1e3",
+                        "on-secondary-fixed-variant": "#594400",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#251a00",
+                        "primary": "#32005b",
+                        "error-red": "#EF4444",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#eaddff",
+                        "tertiary": "#2a0064",
+                        "surface-container-high": "#ece8db",
+                        "surface-tint": "#7b3fb8",
+                        "primary-fixed-dim": "#dcb8ff",
+                        "surface-container-highest": "#e6e2d5",
+                        "on-secondary-container": "#6e5400",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#4f008c",
+                        "surface-dim": "#dedacd",
+                        "secondary-fixed": "#ffdf94",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#4c4452",
+                        "on-secondary": "#ffffff",
+                        "deep-indigo": "#4F008C",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#2c0051",
+                        "tertiary-container": "#440099",
+                        "on-surface": "#1c1c14",
+                        "secondary-fixed-dim": "#f5bf00",
+                        "secondary": "#765b00",
+                        "on-tertiary-container": "#af88ff",
+                        "on-primary-container": "#bf81fe",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "background": "#fdf9eb",
+                        "secondary-container": "#ffc703",
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "outline-variant": "#cec2d4",
+                        "vibrant-yellow": "#FFC700",
+                        "on-background": "#1c1c14",
+                        "inverse-primary": "#dcb8ff",
+                        "outline": "#7d7483",
+                        "surface-container": "#f2eee0",
+                        "primary-fixed": "#f0dbff",
+                        "error-container": "#ffdad6",
+                        "surface": "#fdf9eb",
+                        "surface-bright": "#fdf9eb",
+                        "on-tertiary-fixed": "#25005a",
+                        "surface-warm": "#FFFBED",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f7f4e6",
+                        "surface-variant": "#e6e2d5",
+                        "inverse-surface": "#323128",
+                        "on-primary-fixed-variant": "#62229f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter-desktop": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "base": "8px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Work Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "caption": ["Work Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface-warm text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-bright dark:bg-surface-dim shadow-sm docked full-width top-0 z-50 sticky">
+<div class="max-w-[1200px] mx-auto px-margin-desktop w-full flex justify-between items-center h-20">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary">
+                Parli People
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors text-body-md font-body-md py-2" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors text-body-md font-body-md py-2" href="#">Support Us</a>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors text-body-md font-body-md py-2" href="#">Get Involved</a>
+<a class="text-primary dark:text-inverse-primary border-b-2 border-secondary-container dark:border-secondary-fixed-dim pb-1 font-bold text-body-md font-body-md active:scale-95 transition-transform duration-200" href="#">Year Groups</a>
+</nav>
+<div class="hidden md:flex items-center gap-4">
+<button class="text-label-md font-label-md text-deep-indigo hover:bg-surface-container-low transition-all duration-200 px-4 py-2 rounded-lg border border-transparent hover:border-outline-variant">Join the Committee</button>
+<button class="text-label-md font-label-md bg-deep-indigo text-on-primary hover:opacity-90 active:scale-95 transition-all duration-200 px-6 py-2 rounded-lg shadow-md">Donate Now</button>
+</div>
+<!-- Mobile Menu Button (Placeholder for responsive) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-[1200px] mx-auto w-full px-margin-mobile md:px-margin-desktop py-12 md:py-20">
+<!-- Introduction Section -->
+<section class="max-w-3xl mb-16">
+<h1 class="text-headline-lg-mobile md:text-display-lg font-headline-lg-mobile md:font-display-lg text-primary mb-6">Connect with Your Cohort</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                Stay informed and engaged with what's happening specifically for your child's year. These parent-led WhatsApp groups are the primary communication channels for coordinating class activities, discussing school events, and building a supportive community within your year group.
+            </p>
+<div class="mt-6 flex items-center gap-2 text-deep-indigo bg-surface-container-low inline-flex px-4 py-2 rounded-full border border-outline-variant/30">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span class="text-label-md font-label-md">Moderated Parent Community</span>
+</div>
+</section>
+<!-- Bento Grid for Year Groups -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<!-- Year 7 Card -->
+<article class="bg-surface-container-lowest rounded-xl border border-primary/10 shadow-[0_4px_20px_-4px_rgba(79,0,140,0.08)] overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300">
+<div class="p-6 bg-surface-container-low border-b border-primary/5 flex justify-between items-start">
+<div>
+<span class="text-label-md font-label-md text-deep-indigo bg-primary-fixed px-3 py-1 rounded-full mb-3 inline-block">New Entry</span>
+<h2 class="text-headline-md font-headline-md text-primary">Year 7</h2>
+</div>
+<div class="w-12 h-12 bg-vibrant-yellow rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="text-headline-md font-headline-md">7</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-48 h-48 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-outline-variant relative overflow-hidden group cursor-pointer">
+<!-- Placeholder for actual QR Code -->
+<img alt="Year 7 QR Code" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A stylized, modern high-contrast QR code illustration designed with soft rounded edges, colored in deep indigo purple against a stark white background. The image should convey digital connectivity in a clean, corporate yet approachable style, featuring subtle drop shadows to lift it from the surface, embodying a 'soft-touch' interface aesthetic suitable for a parent-teacher association portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7evhaJGxnEn1-uWXbkXhe1Exp-nDeZmxmVDJ1C1ioH525xJc1BdIOLXe3EZqbPVtPz270BAN_V_A3G5fhBKgxTQyttj7C76OsHf9jq0wZIwPuU6ePwe7RpGhBMxjrtnDbwpe2iS7w7TCmP44FGvYJXeUtrWZGndXlHADy1NZlRZqOKsHcsh-hpvh6IYvt2HXwenRzJhArNM9pm6IErVHGWExC8m7dNEx8RxY5YPR8t2n-oXVfOHK6HchO7blPw_VqjQJSMi6jolL_"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-[40px] drop-shadow-md">fit_screen</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Scan to join the Year 7 Parents WhatsApp Community.</p>
+<button class="w-full py-3 bg-surface-container hover:bg-surface-container-high text-primary text-label-md font-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+                        Join Group via Link
+                    </button>
+</div>
+</article>
+<!-- Year 8 Card -->
+<article class="bg-surface-container-lowest rounded-xl border border-primary/10 shadow-[0_4px_20px_-4px_rgba(79,0,140,0.08)] overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300">
+<div class="p-6 bg-surface-container-low border-b border-primary/5 flex justify-between items-start">
+<div>
+<span class="text-label-md font-label-md text-secondary bg-secondary-fixed px-3 py-1 rounded-full mb-3 inline-block">Active Cohort</span>
+<h2 class="text-headline-md font-headline-md text-primary">Year 8</h2>
+</div>
+<div class="w-12 h-12 bg-vibrant-yellow rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="text-headline-md font-headline-md">8</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-48 h-48 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-outline-variant relative overflow-hidden group cursor-pointer">
+<img alt="Year 8 QR Code" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A stylized, modern high-contrast QR code illustration designed with soft rounded edges, colored in deep indigo purple against a stark white background. The image should convey digital connectivity in a clean, corporate yet approachable style, featuring subtle drop shadows to lift it from the surface, embodying a 'soft-touch' interface aesthetic suitable for a parent-teacher association portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF3jy8xBixPc0RoTAVbHrYz3Ip5jEe8iVLd02sSZt-lTlUezSOHqsqYnSkl2WEQ9TqfZc80R51yXjoiz94jID1wu9LMkkGJENLmyjeTlFqccN-EPOEORsp_weVDg0PXWgyzmduw4ePITl8tmmGjkPXSNkh29ymfsOgVvjAgt5P7Yws1KC8qv26zWhVzsh_88DBS4AonWNwwaON2_eBoVa2lE20MSQSlekV2oh-G21NqfnGRaFgld9vAVrae2gJqbVuwsLvftCUvTPE"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-[40px] drop-shadow-md">fit_screen</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Scan to join the Year 8 Parents WhatsApp Community.</p>
+<button class="w-full py-3 bg-surface-container hover:bg-surface-container-high text-primary text-label-md font-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+                        Join Group via Link
+                    </button>
+</div>
+</article>
+<!-- Year 9 Card -->
+<article class="bg-surface-container-lowest rounded-xl border border-primary/10 shadow-[0_4px_20px_-4px_rgba(79,0,140,0.08)] overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300">
+<div class="p-6 bg-surface-container-low border-b border-primary/5 flex justify-between items-start">
+<div>
+<span class="text-label-md font-label-md text-secondary bg-secondary-fixed px-3 py-1 rounded-full mb-3 inline-block">Active Cohort</span>
+<h2 class="text-headline-md font-headline-md text-primary">Year 9</h2>
+</div>
+<div class="w-12 h-12 bg-vibrant-yellow rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="text-headline-md font-headline-md">9</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-48 h-48 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-outline-variant relative overflow-hidden group cursor-pointer">
+<img alt="Year 9 QR Code" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A stylized, modern high-contrast QR code illustration designed with soft rounded edges, colored in deep indigo purple against a stark white background. The image should convey digital connectivity in a clean, corporate yet approachable style, featuring subtle drop shadows to lift it from the surface, embodying a 'soft-touch' interface aesthetic suitable for a parent-teacher association portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACMMbMAs7nQuv1BM0RIXXlSkLXyUfsWDcpRDwnIbZXr892WMj5U1A1MIhYto5kaok9UUGF3UnDENy_ngQkh7sGonYpoA_rZr43a28xVopRc0ur2WQ6rVVJ6Ybzntd4NCEbEHieWBgz6hmhk0u-RNydwSIztMCPZnHu6qvJUNohHme6x_hfn-BbZvER4Cx-M_v7sXNp9X-yn2Gb5knnp5ocnHKHZuJp3Nd1p7PuqRbV6q5R2G7_UXLUmmUe4U1c-m8ZZ3yqDmtOXZu4"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-[40px] drop-shadow-md">fit_screen</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Scan to join the Year 9 Parents WhatsApp Community.</p>
+<button class="w-full py-3 bg-surface-container hover:bg-surface-container-high text-primary text-label-md font-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+                        Join Group via Link
+                    </button>
+</div>
+</article>
+<!-- Year 10 Card -->
+<article class="bg-surface-container-lowest rounded-xl border border-primary/10 shadow-[0_4px_20px_-4px_rgba(79,0,140,0.08)] overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300">
+<div class="p-6 bg-surface-container-low border-b border-primary/5 flex justify-between items-start">
+<div>
+<span class="text-label-md font-label-md text-on-tertiary-container bg-tertiary-fixed px-3 py-1 rounded-full mb-3 inline-block">GCSE Prep</span>
+<h2 class="text-headline-md font-headline-md text-primary">Year 10</h2>
+</div>
+<div class="w-12 h-12 bg-vibrant-yellow rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="text-headline-md font-headline-md">10</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-48 h-48 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-outline-variant relative overflow-hidden group cursor-pointer">
+<img alt="Year 10 QR Code" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A stylized, modern high-contrast QR code illustration designed with soft rounded edges, colored in deep indigo purple against a stark white background. The image should convey digital connectivity in a clean, corporate yet approachable style, featuring subtle drop shadows to lift it from the surface, embodying a 'soft-touch' interface aesthetic suitable for a parent-teacher association portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSgebHystdJS4_qL3GFR3t_RLlrveU7KmRKcER23dRyMVSpAIE4JpNO_A2K74fLNdO-AmvcHsoUOIp4mHkyLOpV3TwzXeE8_3HdDIBikce7z3QxaziAzpU3OgyjeEQTMie9uQ-BZPIWQ9uwg-7EKBbpxR1D2ID0yUsgpRrHb0wGHlcckHuFWlsN0le2hGxgccKj-93n98e5QDfAmH6vilz5KHcRBftrPYd26tzgwOuPBv20pjftutkdhsRAv0mmpbu1s9jVPD6HI4N"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-[40px] drop-shadow-md">fit_screen</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Scan to join the Year 10 Parents WhatsApp Community.</p>
+<button class="w-full py-3 bg-surface-container hover:bg-surface-container-high text-primary text-label-md font-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+                        Join Group via Link
+                    </button>
+</div>
+</article>
+<!-- Year 11 Card -->
+<article class="bg-surface-container-lowest rounded-xl border border-primary/10 shadow-[0_4px_20px_-4px_rgba(79,0,140,0.08)] overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300 md:col-span-2 lg:col-span-1">
+<div class="p-6 bg-surface-container-low border-b border-primary/5 flex justify-between items-start">
+<div>
+<span class="text-label-md font-label-md text-on-error-container bg-error-container px-3 py-1 rounded-full mb-3 inline-block">Final Year</span>
+<h2 class="text-headline-md font-headline-md text-primary">Year 11</h2>
+</div>
+<div class="w-12 h-12 bg-vibrant-yellow rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="text-headline-md font-headline-md">11</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col items-center justify-center text-center">
+<div class="w-48 h-48 bg-surface-container-high rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-outline-variant relative overflow-hidden group cursor-pointer">
+<img alt="Year 11 QR Code" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A stylized, modern high-contrast QR code illustration designed with soft rounded edges, colored in deep indigo purple against a stark white background. The image should convey digital connectivity in a clean, corporate yet approachable style, featuring subtle drop shadows to lift it from the surface, embodying a 'soft-touch' interface aesthetic suitable for a parent-teacher association portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvI1QL_P-0ydLknPYW2KSeJKrkW9ZkIPC1_EpIB6F9y5SmR6MYUN7STR7b16-TfOvZE2cL2OIi7YeMo8JXwsGhAo9T1UxcfogD3ujjjkpCnsjI7AcYpRykWlfVmzxwSHvfvGo-KVsQGxmqo5bRDqktYaCFhCyuqQ1CeuyMroKSaWVtisevoh7Cwl9IFwQwheCMdfkQqy8tDjKSSoAAtahZ28Iew2IzHvunIMxws1O8Zjzm8g7jGZJ0TcboV6dgpO5pVSmNSz_bgWBS"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-[40px] drop-shadow-md">fit_screen</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Scan to join the Year 11 Parents WhatsApp Community.</p>
+<button class="w-full py-3 bg-surface-container hover:bg-surface-container-high text-primary text-label-md font-label-md rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+                        Join Group via Link
+                    </button>
+</div>
+</article>
+</section>
+<!-- Help Section -->
+<section class="mt-16 bg-surface-container rounded-xl p-8 border border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h3 class="text-body-lg font-body-lg font-semibold text-on-surface mb-1">Need help joining?</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">If you're having trouble accessing your group, contact the PTA admin team.</p>
+</div>
+</div>
+<button class="px-6 py-2 bg-white text-deep-indigo text-label-md font-label-md rounded-lg border border-outline-variant hover:bg-surface-container-lowest transition-colors whitespace-nowrap shadow-sm">
+                Contact Admin
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface mt-auto full-width flat no shadows">
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                    Parli People
+                </div>
+<p class="text-body-md font-body-md text-on-surface dark:text-inverse-on-surface opacity-80">
+                    © 2024 Parli People PTA. All rights reserved. Registered Charity.
+                </p>
+</div>
+<nav class="flex flex-col md:flex-row gap-4 md:gap-8">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed text-label-md font-label-md hover:underline transition-all cursor-pointer" href="#">Contact: info@parli-people.org</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed text-label-md font-label-md hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed text-label-md font-label-md hover:underline transition-all cursor-pointer" href="#">Term of Use</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed text-label-md font-label-md hover:underline transition-all cursor-pointer" href="#">Volunteer Handbook</a>
+</nav>
+</div>
+</footer>
+</body></html>

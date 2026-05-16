@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parli People PTA - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "success-green": "#10B981",
+                      "inverse-on-surface": "#f5f1e3",
+                      "on-secondary-fixed-variant": "#594400",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#251a00",
+                      "primary": "#32005b",
+                      "error-red": "#EF4444",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#eaddff",
+                      "tertiary": "#2a0064",
+                      "surface-container-high": "#ece8db",
+                      "surface-tint": "#7b3fb8",
+                      "primary-fixed-dim": "#dcb8ff",
+                      "surface-container-highest": "#e6e2d5",
+                      "on-secondary-container": "#6e5400",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#4f008c",
+                      "surface-dim": "#dedacd",
+                      "secondary-fixed": "#ffdf94",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#4c4452",
+                      "on-secondary": "#ffffff",
+                      "deep-indigo": "#4F008C",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#2c0051",
+                      "tertiary-container": "#440099",
+                      "on-surface": "#1c1c14",
+                      "secondary-fixed-dim": "#f5bf00",
+                      "secondary": "#765b00",
+                      "on-tertiary-container": "#af88ff",
+                      "on-primary-container": "#bf81fe",
+                      "tertiary-fixed-dim": "#d2bbff",
+                      "background": "#fdf9eb",
+                      "secondary-container": "#ffc703",
+                      "on-tertiary-fixed-variant": "#5a00c6",
+                      "outline-variant": "#cec2d4",
+                      "vibrant-yellow": "#FFC700",
+                      "on-background": "#1c1c14",
+                      "inverse-primary": "#dcb8ff",
+                      "outline": "#7d7483",
+                      "surface-container": "#f2eee0",
+                      "primary-fixed": "#f0dbff",
+                      "error-container": "#ffdad6",
+                      "surface": "#fdf9eb",
+                      "surface-bright": "#fdf9eb",
+                      "on-tertiary-fixed": "#25005a",
+                      "surface-warm": "#FFFBED",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f7f4e6",
+                      "surface-variant": "#e6e2d5",
+                      "inverse-surface": "#323128",
+                      "on-primary-fixed-variant": "#62229f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter-desktop": "24px",
+                      "margin-mobile": "20px",
+                      "container-max": "1200px",
+                      "base": "8px",
+                      "gutter-mobile": "16px",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Work Sans"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Work Sans"
+                      ],
+                      "body-md": [
+                              "Work Sans"
+                      ],
+                      "caption": [
+                              "Work Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-bright shadow-sm docked full-width top-0 z-50 sticky">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile md:px-margin-desktop w-full flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="flex items-center gap-3 active:scale-95 transition-transform duration-200" href="#">
+<img alt="Parli People PTA Logo" class="h-12 w-auto object-contain rounded-DEFAULT" src="https://lh3.googleusercontent.com/aida/ADBb0uhxZLIeGss6QHe0NgWI2wQ267H_hlkVrKnN9j51YvqMeZ89w8620Zq3Ltr4m-dWa2dEDPuaJ16cia70PhhPP-vlanB-S2vzRRwA11TBs2-azACzgxAATPF3O5m63cVJXd-fCY1j88D_P4IboGAtTUfZRsK1TP0z9E0pXkVB1OXbeLk7hQhuwsy7X15wj4YSsKxxFhT8oY36VDLkqKKwbuT8e8dRhWsUKMwcA2x_TZ_QoN-8ZTzjUkMncH64"/>
+<span class="text-headline-md font-headline-md font-bold text-primary">Parli People</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<ul class="hidden md:flex gap-8 items-center">
+<li>
+<a class="text-primary border-b-2 border-secondary-container pb-1 font-bold text-headline-md font-headline-md block active:scale-95 transition-transform duration-200" href="#">Home</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Support Us</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Get Involved</a>
+</li>
+<li>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-headline-md font-headline-md block hover:bg-surface-container-low px-3 py-1 rounded-DEFAULT active:scale-95 transition-transform duration-200" href="#">Year Groups</a>
+</li>
+</ul>
+<!-- Actions (Desktop) -->
+<div class="hidden md:flex items-center gap-4">
+<a class="text-label-md font-label-md font-bold text-primary hover:text-tertiary-container transition-colors active:scale-95 transition-transform duration-200" href="#">Donate Now</a>
+<a class="bg-deep-indigo text-on-primary text-label-md font-label-md px-6 py-2 rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95 flex items-center gap-2" href="#">
+                    Join the Committee
+                    <span class="material-symbols-outlined" data-icon="arrow_forward" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-16 md:py-24 px-gutter-mobile md:px-margin-desktop max-w-[1200px] mx-auto flex flex-col items-center text-center">
+<div class="max-w-3xl space-y-6">
+<h1 class="text-display-lg font-display-lg text-primary">Active Community Engagement for Our School</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    {{DATA:DOCUMENT:DOCUMENT_1}}
+                </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-6">
+<a class="bg-deep-indigo text-on-primary text-label-md font-label-md px-8 py-3 rounded-lg hover:shadow-lg hover:bg-primary transition-all w-full sm:w-auto text-center active:scale-95" href="#">Support Our School</a>
+<a class="bg-vibrant-yellow text-on-secondary-fixed text-label-md font-label-md px-8 py-3 rounded-lg hover:bg-secondary-container hover:shadow-lg transition-all w-full sm:w-auto text-center active:scale-95 flex items-center justify-center gap-2" href="#">
+                        Join the Committee
+                        <span class="material-symbols-outlined" data-icon="group_add" style="font-size: 18px;">group_add</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Our Impact Bento Grid -->
+<section class="py-16 md:py-24 bg-surface-container-low px-gutter-mobile md:px-margin-desktop">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Our Impact</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">See how your contributions directly support the students and enhance the learning environment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Impact Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-primary-container/10 shadow-[0_4px_20px_-4px_rgba(50,0,91,0.05)] flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined" data-icon="science" data-weight="fill">science</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">New Lab Equipment</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">Funded state-of-the-art microscopes and safety gear for the science department, benefiting over 500 students across all year groups.</p>
+<div class="mt-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-caption font-caption font-bold">
+                                £4,500 Funded
+                            </span>
+</div>
+</div>
+<!-- Impact Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-primary-container/10 shadow-[0_4px_20px_-4px_rgba(50,0,91,0.05)] flex flex-col gap-4 md:col-span-2">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined" data-icon="directions_bus" data-weight="fill">directions_bus</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary">Subsidized School Trips</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">Ensured equal access to educational excursions by covering transportation and entry fees for students who need financial assistance. Recent trips include the Natural History Museum and local theater productions.</p>
+<div class="mt-4 flex gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed text-caption font-caption font-bold">
+                                12 Trips Supported
+                            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed text-caption font-caption font-bold">
+                                Equal Access
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Events Section -->
+<section class="py-16 md:py-24 px-gutter-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-outline-variant pb-4">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-2">Upcoming Events</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Join us and be part of the community.</p>
+</div>
+<a class="text-label-md font-label-md text-primary hover:text-tertiary-container flex items-center gap-2 group transition-colors" href="#">
+                    View Full Calendar
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+<div class="space-y-4">
+<!-- Event List Item 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-shadow">
+<div class="bg-surface-container text-center rounded-lg min-w-[80px] py-3 flex-shrink-0">
+<span class="block text-label-md font-label-md text-error-red uppercase tracking-wider">OCT</span>
+<span class="block text-headline-lg font-headline-lg text-on-surface mt-1">15</span>
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-caption font-caption font-semibold">Meeting</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Annual General Meeting (AGM)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="schedule" style="font-size: 18px;">schedule</span>
+                            7:00 PM - 8:30 PM
+                            <span class="mx-2 text-outline-variant">|</span>
+<span class="material-symbols-outlined text-outline" data-icon="location_on" style="font-size: 18px;">location_on</span>
+                            Main School Hall
+                        </p>
+</div>
+<div class="w-full md:w-auto mt-4 md:mt-0 flex-shrink-0">
+<button class="w-full md:w-auto bg-surface-container border border-outline text-on-surface text-label-md font-label-md px-6 py-2 rounded-lg hover:bg-surface-variant transition-colors active:scale-95">RSVP</button>
+</div>
+</div>
+<!-- Event List Item 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-shadow">
+<div class="bg-surface-container text-center rounded-lg min-w-[80px] py-3 flex-shrink-0">
+<span class="block text-label-md font-label-md text-error-red uppercase tracking-wider">NOV</span>
+<span class="block text-headline-lg font-headline-lg text-on-surface mt-1">05</span>
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-caption font-caption font-semibold">Fundraiser</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Autumn Bake Sale</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="schedule" style="font-size: 18px;">schedule</span>
+                            3:15 PM - 5:00 PM
+                            <span class="mx-2 text-outline-variant">|</span>
+<span class="material-symbols-outlined text-outline" data-icon="location_on" style="font-size: 18px;">location_on</span>
+                            School Playground
+                        </p>
+</div>
+<div class="w-full md:w-auto mt-4 md:mt-0 flex-shrink-0">
+<button class="w-full md:w-auto bg-deep-indigo text-on-primary text-label-md font-label-md px-6 py-2 rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all active:scale-95">Volunteer</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface full-width mt-auto">
+<div class="max-w-[1200px] mx-auto px-gutter-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4 max-w-sm">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim">Parli People</span>
+<p class="text-body-md font-body-md text-on-surface dark:text-inverse-on-surface">Active Community Engagement for Our School.</p>
+<p class="text-label-md font-label-md text-on-surface dark:text-inverse-on-surface opacity-80 mt-4">
+                    © 2024 Parli People PTA. All rights reserved. Registered Charity.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 w-full md:w-auto">
+<ul class="flex flex-col gap-3">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Contact: info@parli-people.org</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a></li>
+</ul>
+<ul class="flex flex-col gap-3">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Term of Use</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed hover:underline transition-all cursor-pointer" href="#">Volunteer Handbook</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
