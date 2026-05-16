@@ -1,5 +1,9 @@
+function getHomeHref() {
+  return window.location.protocol === "file:" ? "./index.html" : "./";
+}
+
 const NAV_ITEMS = [
-  { key: "home", label: "Home", href: "./index.html" },
+  { key: "home", label: "Home", href: getHomeHref() },
   { key: "support", label: "Support Us", href: "./support.html" },
   { key: "get-involved", label: "Get Involved", href: "./getinvolved.html" },
   { key: "year-groups", label: "Year Groups", href: "./connect.html" },
@@ -40,6 +44,7 @@ function renderNavLinks(currentPage, mobile = false) {
 class ParliSiteHeader extends HTMLElement {
   connectedCallback() {
     const currentPage = this.getAttribute("current-page") || detectCurrentPage();
+    const homeHref = getHomeHref();
     const shadowRoot = this.shadowRoot || this.attachShadow({ mode: "open" });
 
     shadowRoot.innerHTML = `
@@ -271,7 +276,7 @@ class ParliSiteHeader extends HTMLElement {
       <header>
         <div class="container">
           <div class="bar">
-            <a class="brand" href="./index.html" aria-label="Parli People home">
+            <a class="brand" href="${homeHref}" aria-label="Parli People home">
               <img class="brand-logo" src="${BRAND_LOGO}" alt="Parli People PTA logo" loading="eager" fetchpriority="high" decoding="async">
               <span>Parli People</span>
             </a>
