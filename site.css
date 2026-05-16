@@ -1133,6 +1133,20 @@ parli-site-footer {
   gap: 24px;
 }
 
+.home-hero__visual {
+  width: min(100%, 56rem);
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(125, 116, 131, 0.2);
+  box-shadow: var(--shadow-soft);
+}
+
+.home-hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .home-actions {
   display: flex;
   flex-direction: column;
