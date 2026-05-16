@@ -115,10 +115,10 @@ class ParliSiteHeader extends HTMLElement {
           align-items: center;
           border-bottom: 2px solid transparent;
           color: #4c4452;
-          font-family: "Plus Jakarta Sans", sans-serif;
-          font-size: 24px;
+          font-family: "Work Sans", sans-serif;
+          font-size: 16px;
           font-weight: 600;
-          line-height: 1.3;
+          line-height: 1.5;
           padding: 4px 0;
           transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease;
         }
@@ -237,7 +237,7 @@ class ParliSiteHeader extends HTMLElement {
         .mobile-link {
           padding: 10px 12px;
           border-radius: 10px;
-          font-size: 18px;
+          font-size: 16px;
         }
 
         .mobile-link.active {
