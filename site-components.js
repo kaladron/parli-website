@@ -6,7 +6,7 @@ const NAV_ITEMS = [
 ];
 
 const BRAND_LOGO =
-  "https://lh3.googleusercontent.com/aida/ADBb0uhxZLIeGss6QHe0NgWI2wQ267H_hlkVrKnN9j51YvqMeZ89w8620Zq3Ltr4m-dWa2dEDPuaJ16cia70PhhPP-vlanB-S2vzRRwA11TBs2-azACzgxAATPF3O5m63cVJXd-fCY1j88D_P4IboGAtTUfZRsK1TP0z9E0pXkVB1OXbeLk7hQhuwsy7X15wj4YSsKxxFhT8oY36VDLkqKKwbuT8e8dRhWsUKMwcA2x_TZ_QoN-8ZTzjUkMncH64";
+  "./assets/images/branding/parli-people-logo.jpg";
 
 function detectCurrentPage() {
   const fileName = window.location.pathname.split("/").pop() || "index.html";
